@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swift_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello there!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daq-ea-Zx0">
+                                <rect key="frame" x="116" y="70" width="88.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pl-nM-qlf">
+                                <rect key="frame" x="128" y="140.5" width="64" height="30"/>
+                                <state key="normal" title="Welcome"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hmj-Hi-jKq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHc-lg-McK">
+                                <rect key="frame" x="138" y="210.5" width="44" height="30"/>
+                                <state key="normal" title="Status"/>
+                                <connections>
+                                    <action selector="button2Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yGl-Sg-tGr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yHc-lg-McK" firstAttribute="top" secondItem="6pl-nM-qlf" secondAttribute="bottom" constant="40" id="1TO-9o-lxe"/>
+                            <constraint firstItem="6pl-nM-qlf" firstAttribute="top" secondItem="daq-ea-Zx0" secondAttribute="bottom" constant="50" id="QOB-sr-Drv"/>
+                            <constraint firstItem="yHc-lg-McK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YiH-Yz-asd"/>
+                            <constraint firstItem="6pl-nM-qlf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a7p-Ow-hOy"/>
+                            <constraint firstItem="daq-ea-Zx0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dV3-OM-QDq"/>
+                            <constraint firstItem="6pl-nM-qlf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qzD-dS-i4X"/>
+                            <constraint firstItem="daq-ea-Zx0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="zVE-au-vP3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="theLabel" destination="daq-ea-Zx0" id="g9f-M7-phe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-379" y="213"/>
+        </scene>
+    </scenes>
+</document>
